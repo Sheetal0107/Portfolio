@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--<!DOCTYPE html> is basically you telling the browser:
+“Hey, this page is written in HTML5 — please render it in standards mode (not in some weird old compatibility mode).”-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <!--is an HTML tag that tells the browser what character encoding the page is using.
+    meta → An HTML element for metadata (information about the page).
+    charset → Short for "character set," meaning how characters are stored and interpreted.
+    UTF-8 → An universal encoding that can represent almost every character from every language including emojis-->
+
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <!--how to control the page’s size and scaling on different devices, especially on mobile.
+    name="viewport" → Refers to the visible area of the web page on the user’s device.
+    content="..." → Settings for that viewport.
+    width=device-width → The page’s width should match the actual screen width of the device (so it’s not zoomed out or tiny).
+    initial-scale=1.0 → The page’s zoom level when it first loads is 100% (no zoom in/out).-->
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!--Go to Google type Boxicons- Go to Usage
+    --Usage as a Font-Import the CSS-->
+
+    <link rel="stylesheet" href="style.css">
+    <title>Sheetal Bardia</title>
+</head>
+<body>
+
+    <!--Header-->
+    <!--Header stays on top, containing navigation.-->
+    <!--<header class="...">
+    <header> = semantic HTML tag for the top section of a page or a section (usually contains logo, navigation, title).
+    class="header" means you’re naming this header “header” so you can style it in CSS.-->
+
+    <header class="header">
+        <a href="#home" class="logo">Sheetal Bardia</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+    <!--Go to Boxicon search menu-->
+
+    <!--class="..." is an attribute that lets you label an element.
+    That label (class name) can be used in CSS for styling or in JavaScript for targeting.
+    You can assign the same class to multiple elements, and one element can have multiple classes.-->
+
+
+    <!--<nav class="...">
+        <nav> = semantic HTML tag for navigation menus (links to other sections/pages).
+        class="navbar" lets you style it:-->
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#work experience">Work Experience</a>
+            <a href="#contact">Contact</a>
+        </nav> <!--nav.navbar-->
+    </header> <!--You can write header.header and press TAB-->
+
+    <!--IDs like #home, #about are anchors for smooth scrolling navigation.
+    Classes like .header, .home-content, .btn are used in CSS for styling.
+    Icons come from the Boxicons library.-->
+
+    <!--Home-->
+    <!--Home section introduces you with an image, your name, role, and social links.-->
+    <!--<div class="...">
+    <div> = generic container for grouping elements.
+    class="home-img" means you can target that specific container in CSS.-->
+
+    <section class="home" id="home">
+        <div class="home-img">
+            <img src="sheetal.jpg" alt="Profile Image"> <!--img-->
+        </div> <!--.home-img-->
+        <div class="home-content">
+            <h2>Hi, Myself</h2> <!--h2-->
+            <h1>Sheetal Bardia</h1>
+            <h2>And I'm a <span class="multiple-text">Web Developer</span></h2>
+            <p>Welcome to my portfolio!</p>
+    
+    <!--<i class="...">
+        <i> originally meant italic text, but today it’s widely used for icons.
+        Libraries like Boxicons or Font Awesome replace <i class="bx bxl-facebook"> with a Facebook icon.-->
+
+            <div class="social-media"> <!--.social-media-->
+                <a href="https://www.linkedin.com/in/sheetal-bardia-13086a280/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Sheetal0107"><i class='bx bxl-github' target="_blank"></i></a>
+                <a href="https://www.instagram.com/_seesheetalsea_/profilecard/?igsh=NXhoMzZ3YjZqMXN4" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/share/19ytXDbtUq/" target="_blank"><i class='bx bxl-facebook'></i></a>
+            </div>
+            <a href="Sheetal Bardia .pdf" class="btn">Download CV</a>
+        </div>  <!--.home-content-->
+    </section> <!--section.home#home-->
+
+    <!--ABOUT-->
+    <section class="about" id="about">
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <p>Currently working as Packaged App Development Associate at Accenture!</p>
+            <div class="box-container">
+            <div class="box">
+                <p><span> Age: </span> 23 </p>
+                <p><span> Gender: </span> Female </p>
+                <p><span> Language: </span> English, Hindi, Bengali </p>
+            </div>
+            <div class="box">
+                <p><span> Phone: </span> +91-80171-97061 </p>
+                <p><span> Email: </span> bardiasheetal0107@gmail.com </p>
+                <p><span> Country: </span> India </p>
+            </div>
+            </div>
+
+            <h2 class="heading"><span>My</span> Skills</h2>
+
+            <div class="row">
+
+            <div class="skills">
+
+                <div class="progress">
+                    <h3> HTML <span> 95% </span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3> MySQL <span> 80% </span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3> CSS <span> 60% </span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3> Java <span> 50% </span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+                <div class="progress">
+                    <h3> JavaScript <span> 40% </span></h3>
+                    <div class="bar"><span></span></div>
+                </div>
+            </div>
+        
+        </div>
+            <a href="#home" class="btn">Read More</a>
+        </div>
+        <div class="about-img">
+            <img src="sb.jpg" alt="About Image">
+        </div>
+        
+    </section>
+
+    <!--Education-->
+
+    <section class="education" id="education">
+        <h1 class="heading"><span> My </span> Education </h1>
+        <div class="box-container1">
+            <div class="box1">
+                <div class="content">
+                    <div class="year"><i class='bx bxs-calendar'></i> Till 2018 </div>
+                    <h3>Secondary</h3>
+                    <p> Studied at H.M.Education Center.
+                        Scored 81% in 10th, passed on CBSE board.
+                    </p>
+                </div>
+                <div class="content">
+                    <div class="year"><i class='bx bxs-calendar'></i> 2018-2020 </div>
+                    <h3>Higher Secondary</h3>
+                    <p>Studied at Sudhir Memorial Institute.
+                       Scored 66.6% in 12th, passed on CBSE board.</p>
+                </div>
+                <div class="content">
+                    <div class="year"><i class='bx bxs-calendar'></i> 2020-2024 </div>
+                    <h3>B.Tech</h3>
+                    <p>Studied at University of Engineering and Management Kolkata.
+                       Passed scoring 9.02 CGPA</p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Work Experience-->
+    <section class="work experience" id="work experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="detail-containers">
+                    <h2 class="experience-sub-title">Packaged App Development Associate</h2>
+                    <div class="article-container">
+                        <article>
+                        <div>
+                            <h3>at Accenture</h3>
+                            <p>Currently working. Joined at June 2024.</p>
+                        </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" name="Email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Phone Number">
+                <input type="text" name="Email" placeholder="Email Subject">
+            </div>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.linkedin.com/in/sheetal-bardia-13086a280/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/Sheetal0107"><i class='bx bxl-github' target="_blank"></i></a>
+                <a href="https://www.instagram.com/_seesheetalsea_/profilecard/?igsh=NXhoMzZ3YjZqMXN4" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/share/19ytXDbtUq/" target="_blank"><i class='bx bxl-facebook'></i></a>
+        </div>
+        <p class="copyright">
+            &copy;Sheetal Bardia - All Rights Reserved
+        </p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!--Type typed js in google, open mattboldt one, scroll down
+you will get CDN there copy the script query-->
+    <script src="script.js"></script>
+</body>
+</html>
