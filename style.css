@@ -317,7 +317,7 @@ span {
 }
 
 .about-content .row .skills .progress:nth-child(4) .bar span {
-    width: 50%;
+    width: 60%;
 }
 
 .about-content .row .skills .progress:nth-child(5) .bar span {
@@ -643,4 +643,5 @@ article {
     html{
         font-size: 50%;
     }
+
 }
